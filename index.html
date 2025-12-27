@@ -1,88 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agriculture Learning App | Mrs. Aisosa Oyakhire</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-  <h1>Agricultural Science Learning App</h1><br>
-  <h2>by Mrs. Aisosa Oyakhire</h2>
-  <p>WAEC / NECO Syllabus (SS1 – SS3)</p>
-</header>
-
-<div class="wrapper">
-  <aside class="panel">
-    <h3>Class</h3>
-    <button class="nav-btn" onclick="showSection('SS1', this)">SS1</button>
-    <button class="nav-btn" onclick="showSection('SS2', this)">SS2</button>
-    <button class="nav-btn" onclick="showSection('SS3', this)">SS3</button>
-  </aside>
-
-  <main>
-    <!-- ================= WELCOME ================= -->
-    <section id="WELCOME" class="level">
-      <article class="topic">
-        <h2>Welcome 👋</h2>
-        <p>
-          Welcome to the Agriculture Learning App. This platform is designed to help
-          senior secondary school students study Agriculture based on the WAEC and
-          NECO syllabus.
-        </p>
-        <p>
-          👉 Select your class (SS1, SS2, or SS3) on the left to begin learning.
-        </p>
-        <p>
-          You will find clear notes, illustrations, and well-organized topics to
-          support your success in examinations and practical understanding.
-        </p>
-
-        <!-- Daily Motivation / Bible Verse -->
-        <div id="dailyVerse" class="verse-box">
-          <strong>Daily Motivation</strong>
-          <p id="verseText"></p>
-          <small id="verseRef"></small>
-        </div>
-      </article>
-    </section>
-
-    <!-- ================= SS1 CONTENT ================= -->
-    <section id="SS1" class="level hidden">
-      <article class="topic">
-        <h2>Introduction to Agriculture</h2>
-        <p>Agriculture is the science, art and business of cultivating crops and rearing animals for food, fibre and income.</p>
-        <img src="https://via.placeholder.com/400x200?text=Farm+Activities">
-      </article>
-
-      <article class="topic">
-        <h2>Importance of Agriculture</h2>
-        <p>Agriculture provides food, employment, raw materials for industries and foreign exchange earnings.</p>
-      </article>
-    </section>
-
-    <!-- ================= SS2 CONTENT ================= -->
-    <section id="SS2" class="level hidden">
-      <article class="topic">
-        <h2>Soil Science</h2>
-        <p>Soil science deals with the study of soil properties, formation and classification for agricultural use.</p>
-      </article>
-    </section>
-
-    <!-- ================= SS3 CONTENT ================= -->
-    <section id="SS3" class="level hidden">
-      <article class="topic">
-        <h2>Farm Management</h2>
-        <p>Farm management involves planning, organizing and controlling farm resources to achieve maximum productivity.</p>
-      </article>
-    </section>
-  </main>
-</div>
-
-<footer>© 2025 Agriculture Learning App</footer>
-
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>agriclearningapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
